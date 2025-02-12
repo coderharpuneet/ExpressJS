@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>This is G23 Batch.</h1>
+    <h1>Chitkara Uiversity : <% let x=110; %></h1>
+    <h1>Chitkara Uiversity : <%= x; %></h1>
+    <!-- <h1>luck number: <%= Math.random() %></h1> -->
+
+    <!-- If Stataement -->
+    <% if (x<100) { %>
+        <h1><%= x; %> is less than 100</h1>
+    <% } else { %>
+     <h1><%= x; %> is greater than 100</h1>
+     <% } %>
+
+
+
+
+     <!-- Loop Statement -->
+     <% for(let i=0;i<10;i++) {%>
+        <h1>Index: <%= i %></h1>
+     <% } %>
+
+
+
+     <!-- Array -->
+      <% let arr=["Chandigarh","Ludhiana","Mumbai"] %>
+      <% for( let i = 0; i < arr.length; i++ ) { %>
+        <ul>
+            <li><%= arr[i] %></li>
+        </ul>
+      <% } %>
+
+
+      
+</body>
+</html>
